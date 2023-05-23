@@ -21,7 +21,7 @@ const categoria = connection.define(
     }
 );
 
-//categoria.sync({force:true}); - Usado apenas para forçar a criação da tabela
+//categoria.sync({force:true}); 
 
 module.exports = categoria;
 

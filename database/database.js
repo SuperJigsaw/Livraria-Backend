@@ -15,7 +15,7 @@ PARAMETROS:
     4.4 - TIMEZONE -3
 */
 const connection = new sequelize(
-    'pw2_api_livraria',
+    'api_livraria',
     'root',
     '',
     {

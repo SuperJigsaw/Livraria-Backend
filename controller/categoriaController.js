@@ -20,7 +20,7 @@ router.post('/categoria/inserir', (req,res)=>{
                 mensagenStatus:'CATEGORIA INSERIDA COM SUCESSO'
             });
         }   
-    ).cath(
+    ).catch(
         (error)=>{
             return res.status(500).json({
                 errorStatus:true,
@@ -43,7 +43,7 @@ router.get('/categoria/selecionar', (req,res)=>{
             res.json(categorias);
         }
     )
-    .cath(
+    .catch(
         (error)=>{
             return res.status(500).json({
                 errorStatus:true,
@@ -71,7 +71,7 @@ router.put('/categoria/alterar', (req,res)=>{
             });
         }
     )
-    .cath(
+    .catch(
         (error)=>{
             return res.status(500).json({
                 errorStatus:true,
@@ -99,8 +99,8 @@ router.delete('/categoria/excluir/:id', (req,res)=>{
             });
         }
     )
-    //res.send('ROTA DE CATEGORIA DE DELETE!');
-    .cath(
+    //res.send('ROTA DE CATEGORIA DE EXCLUSÃO!');
+    .catch(
         (error)=>{
             return res.status(500).json({
                 errorStatus:true,
