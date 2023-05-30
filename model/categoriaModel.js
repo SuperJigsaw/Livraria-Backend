@@ -21,7 +21,7 @@ const categoria = connection.define(
     }
 );
 
-//categoria.sync({force:true}); 
+//categoria.sync({force:false}); 
 
 module.exports = categoria;
 

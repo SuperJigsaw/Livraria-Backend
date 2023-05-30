@@ -42,7 +42,7 @@ categoria.hasMany(livro);
 /* CHAVE ESTRANGEIRA DE LIVRO (N) É A CHAVE PRIMARIA DE CATEGORIA (1) */
 livro.belongsTo(categoria);
 
-//livro.sync({force:true});
+//livro.sync({force:false});
 
 
 module.exports = livro;

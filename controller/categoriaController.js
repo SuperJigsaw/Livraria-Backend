@@ -87,7 +87,7 @@ router.put('/categoria/alterar', (req,res)=>{
 /* ROTA DE EXCLUSÃO DE CATEGORIA(DELETE)*/
 router.delete('/categoria/excluir/:id', (req,res)=>{
 
-    let id = req.params.id;
+    let {id} = req.params;
     //console.log('ID: '+ id) ;
     categoriaModel.destroy(
         {where:{id}}
